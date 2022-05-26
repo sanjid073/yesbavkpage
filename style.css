@@ -1,0 +1,28 @@
+/* Webpixels CSS */
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+
+/* header-section */
+.header-info{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(222, 255, 77, 0.636);
+}
+.info-icon {
+    color: rgb(13 85 2);
+    margin-top: 11px;
+    font-size: 15px;
+}
+.info-text {
+    font-size: 12px;
+    display: inline-block;
+    color: #4E52D0;
+    font-weight: bold;
+}
+
+.info-second-text p{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}

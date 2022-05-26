@@ -26,3 +26,44 @@
     font-weight: 500;
     color: black;
 }
+
+/* location-section */
+.location-box{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.location-name{
+    width: 100%;
+    background-color: #4E52D0;
+    padding: 10px 0px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+}
+.location-name img{
+    margin-top: -8px;
+}
+.location-name h3 {
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+}
+.city-name {
+    color: black !important;
+    margin-left: 30px;
+    text-decoration: dashed;
+    border-bottom: 1px dotted black;
+}
+.city-name:hover {
+    color: red!important;
+}
+.state-name a{
+    color: black !important;
+}
+.state-name a:hover{
+    color: #4E52D0 !important;
+}
+.state-name ul li{
+    list-style: none;
+    margin: 0;
+}

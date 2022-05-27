@@ -1,0 +1,30 @@
+1 home **
+2 adveritse category page **
+3 advertise collection page 
+4 add decsription page 
+////
+5 login/sign up page
+6 user deshbooard page 
+7 Profile Settings
+8 Payment History:
+9 buy cradits
+
+post
+
+10 Ad Location page
+11 post category  page
+12 post subcategory  page
+13 Make a Post page
+
+admin 
+1 login 
+2 dashboard 
+3 country, state , city 
+4 add category, subcategory 
+5 add post list 
+6 user list 
+7 user payment information 
+8 user cradits infromation 
+9 Contact page 
+10 admin user information 
+11 api information 

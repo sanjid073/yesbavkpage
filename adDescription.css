@@ -1,0 +1,30 @@
+/* Webpixels CSS */
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+/* header */
+.warning{
+    padding: 10px;
+    border: 1px solid black;
+   border-radius: 10px;
+}
+.warning i{
+    color: red;
+    font-size: 20px;
+}
+.warning h3{
+    font-size: 18px;
+    color: red;
+    display: contents;
+}
+.ad-box{
+    margin: 10px auto;
+}
+.card img{
+     display: inline;
+}
+
+/* footer */
+#footer{
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+}

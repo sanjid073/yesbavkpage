@@ -1,7 +1,7 @@
 1 home **
 2 adveritse category page **
-3 advertise collection page 
-4 add decsription page 
+3 advertise collection page **
+4 add description page 
 ////
 5 login/sign up page
 6 user deshbooard page 

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awosome cdn -->
+    <script
+      src="https://kit.fontawesome.com/e6a5841b3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootrsap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css cdn -->
+    <link rel="stylesheet" href="userDeshboard.css" />
+    <title>User DeshBoard</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
+        <div class="container-xl">
+          <!-- Logo -->
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="https://preview.webpixels.io/web/img/logos/clever-light.svg"
+              class="h-8"
+              alt="..."
+            />
+          </a>
+          <!-- Navbar toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Right navigation -->
+            <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+              <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto me-2">
+                Post Ad
+              </a>
+            </div>
+            <!-- Action -->
+            <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+              <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
+                My Account
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="header-section">
+        <div class="container">
+          <div class="header-nav">
+            <i class="fa-solid fa-user"></i>
+            <a href="">My Account</a>
+            <i class="fa-solid fa-list-check"></i>
+            <a href="managePost.html">Manage Posts</a>
+            <i class="fa-solid fa-credit-card"></i>
+            <a href=""> Reload Balance</a>
+            <i class="fa-solid fa-square-pen"></i>
+            <a href=""> Post Ad</a>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href=""> Logout</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="counting-post">
+        <div class="container">
+          <div class="row">
+            <h3 class="info-head my-2">Post Details</h3>
+            <div class="col-lg-4">
+              <div class="counter-box text-center">
+                <p class="counter">0</p>
+                <p class="counter-name">Active Post</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="counter-box text-center">
+                <p class="counter">0</p>
+                <p class="counter-name">Paid Posts</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="counter-box text-center">
+                <p class="counter">0</p>
+                <p class="counter-name">Free Post</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="user-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 class="info-head my-2">Account Details</h3>
+                  <table class="table">
+                    <tr>
+                      <th class="text-dark fw-bold">Name :</th>
+                      <td class="text-dark">Sanjid</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark fw-bold">Email :</td>
+                      <td class="text-dark">sanjidmahe@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark fw-bold">Username :</td>
+                      <td class="text-dark">Sanjid</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark fw-bold">Password</td>
+                      <td class="text-dark">12345678</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 class="info-head my-2">Billing & Balance</h3>
+                  <table class="table">
+                    <tr>
+                      <th class="text-dark fw-bold">Account Balance :	</th>
+                      <td class="text-dark fw-bold">$0</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark fw-bold">Confirmed Charges :	</td>
+                      <td class="text-dark">0</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark fw-bold">Pending Charges :	</td>
+                      <td class="text-dark">0</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark fw-bold">Total Charge Created :	</td>
+                      <td class="text-dark">0</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container text-center">
+          <p>Copyright © 2018 - 2022. All rights reserved.</p>
+        </div>
+      </footer>
+  </body>
+</html>

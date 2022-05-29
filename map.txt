@@ -1,13 +1,13 @@
 1 home **
 2 adveritse category page **
 3 advertise collection page **
-4 add description page 
+4 add description page **
 ////
-5 login/sign up page
-6 user deshbooard page 
-7 Profile Settings
-8 Payment History:
-9 buy cradits
+5 login/sign up page **
+6 user dashboard page ** 
+7 manage post
+8 reload balance
+9 post add
 
 post
 

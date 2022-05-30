@@ -18,7 +18,34 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <title>Ad Description</title>
+    <script>
+      $(document).ready(function () {
+        // required elements
+        var imgPopup = $(".img-popup");
+        var imgCont = $(".container__img-holder");
+        var popupImage = $(".img-popup img");
+        var closeBtn = $(".close-btn");
+
+        // handle events
+        imgCont.on("click", function () {
+          var img_src = $(this).children("img").attr("src");
+          imgPopup.children("img").attr("src", img_src);
+          imgPopup.addClass("opened");
+        });
+
+        $(imgPopup, closeBtn).on("click", function () {
+          imgPopup.removeClass("opened");
+          imgPopup.children("img").attr("src", "");
+        });
+
+        popupImage.on("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- navbar -->
@@ -55,7 +82,10 @@
             </div>
             <!-- Action -->
             <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
-              <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
+              <a
+                href="userDashboard.html"
+                class="btn btn-sm btn-primary w-full w-lg-auto"
+              >
                 My Account
               </a>
             </div>
@@ -66,46 +96,70 @@
 
     <!-- main -->
     <main>
-      <section id="header-section ">
-        <div class="container">
-          <div class="warning mt-2">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <h3>
-              Please use your common sense before making any Pre-Payment (Mainly
-              GIFT CARDS): YesBackpage will NOT be responsible for any financial
-              Losses!
-            </h3>
-          </div>
-        </div>
-      </section>
+    
 
       <!-- ad description -->
       <section id="ad-description">
         <div class="container">
           <div class="ad-box">
             <div class="card mx-auto" style="width: 80%">
-              <div class="row">
-                <div class="col-lg-4">
+              <h3 class="card-title p-5">
+                All Types Of Drugs You Need Are Available With Quick Delivery
+                Anywhere In USA
+              </h3>
+              <div class="container text-center">
+                <div class="container__img-holder mx-auto">
                   <img
-                    src="pic/ian-dooley-DJ7bWa-Gwks-unsplash.jpg"
-                    class="card-img-top"
-                    alt="..."
+                    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                    alt="Image"
                   />
                 </div>
-                <div class="col-lg-4">
+                <div class="container__img-holder">
                   <img
-                    src="pic/ian-dooley-DJ7bWa-Gwks-unsplash.jpg"
-                    class="card-img-top"
-                    alt="..."
+                    src="https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                    alt="Image"
                   />
                 </div>
-                <div class="col-lg-4">
+                <div class="container__img-holder">
                   <img
-                    src="pic/ian-dooley-DJ7bWa-Gwks-unsplash.jpg"
-                    class="card-img-top"
-                    alt="..."
+                    src="https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                    alt="Image"
                   />
                 </div>
+                <div class="container__img-holder">
+                  <img
+                    src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="Image"
+                  />
+                </div>
+                <div class="container__img-holder">
+                  <img
+                    src="https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="Image"
+                  />
+                </div>
+                <div class="container__img-holder">
+                  <img
+                    src="https://images.pexels.com/photos/589697/pexels-photo-589697.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+
+              <div class="img-popup">
+                <img src="" alt="Popup Image" />
+                <div class="close-btn">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="warning container mt-2">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>
+                  Please use your common sense before making any Pre-Payment (Mainly
+                  GIFT CARDS): YesBackpage will NOT be responsible for any financial
+                  Losses!
+                </h3>
               </div>
               <div class="card-body">
                 <p class="text-dark mb-1">
@@ -118,10 +172,7 @@
                   <i class="fa-solid fa-location-dot"></i> Location :
                   <strong class="text-dark">Alabama</strong>
                 </p>
-                <h3 class="card-title">
-                  All Types Of Drugs You Need Are Available With Quick Delivery
-                  Anywhere In USA
-                </h3>
+                
 
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
@@ -194,7 +245,11 @@
                 </p>
 
                 <div class="contact-btn text-center">
-                  <a href="emailAd.html" class="btn btn-primary mx-auto">Email This AD</a>
+                  <a href="" class="btn btn-primary mx-auto"
+                    >Report AD</a>
+                  <a href="emailAd.html" class="btn btn-primary mx-auto"
+                    >Email This AD</a>
+                  
                 </div>
               </div>
             </div>

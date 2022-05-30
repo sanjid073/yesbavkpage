@@ -17,8 +17,8 @@
       crossorigin="anonymous"
     />
     <!-- css cdn -->
-    <link rel="stylesheet" href="ManagePost.css" />
-    <title>Manage Post</title>
+    <link rel="stylesheet" href="reloadBalance.css" />
+    <title>Reload Balance</title>
   </head>
   <body>
     <!-- navbar -->
@@ -82,35 +82,35 @@
         </div>
       </section>
 
-      <section>
-         
-        <div class="container table-responsive py-5">
-            <h3 class="info-head my-2">Manage Post</h3>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">SL.</th>
-                <th scope="col">Title</th>
-                <th scope="col">Status</th>
-                <th scope="col">Package</th>
-                <th scope="col">City/Location</th>
-                <th scope="col">Posted AT</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td><button class="btn btn-danger">Delete</button></td>
-              </tr>
-         
-            </tbody>
-          </table>
+      <section id="reload-balance">
+        <div class="container">
+          <div class="reload-balance-box">
+            <h3 class="info-head">Reload Balance</h3>
+            <form action="">
+              <label class="fw-bold" for="">Payment Method</label>
+              <select
+                class="form-select Default select"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Bitcoin</option>
+              </select>
+              <label class="fw-bold" for="">Amount In USD*</label>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="10"
+                />
+              </div>
+              <p class="text-dark fw-bold">
+                I have read and agree to this disclaimer as well as the <span class="text-danger">Terms of
+                    Use.</span>
+              </p>
+              <button class="btn btn-primary" type="submit" value="">Accepts and Submit</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

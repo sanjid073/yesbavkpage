@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awosome cdn -->
+    <script
+      src="https://kit.fontawesome.com/e6a5841b3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootrsap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css cdn -->
+    <link rel="stylesheet" href="makePost.css" />
+    <title>Make Post</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
+        <div class="container-xl">
+          <!-- Logo -->
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="https://preview.webpixels.io/web/img/logos/clever-light.svg"
+              class="h-8"
+              alt="..."
+            />
+          </a>
+          <!-- Navbar toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Right navigation -->
+            <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+              <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto me-2">
+                Post Ad
+              </a>
+            </div>
+            <!-- Action -->
+            <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+              <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
+                My Account
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="link-bar">
+          <a href="index.html">Home</a>
+          > <a href="userDashboard.html">My Account</a> >
+          <a href="postLocation.html">Select Location</a> >
+          <a href="postLocation.html" class="active">Select Category</a> >
+          <a href="postLocation.html" class="active">Select Sub Category</a> >
+          <a href="postLocation.html" class="active">Make Post</a>
+        </div>
+      </div>
+
+      <section class="make-post">
+        <form action="">
+        <div class="container">
+          <h3 style="color: #4e52d0" class="my-5">Make a Post:</h3>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="post-title">
+                <label class="fw-bold" for="">Title*</label>
+                <input required type="text" />
+                <label class="fw-bold" for="">Description*</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- user info box -->
+          <div class="user-box">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="user-info">
+                  <label class="fw-bold" for="">Name*</label>
+                  <input required type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="user-info">
+                  <label class="fw-bold" for="">Age*</label>
+                  <input required type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="user-info">
+                  <label class="fw-bold" for="">E-mail</label>
+                  <input required type="email" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="user-info">
+                  <label class="fw-bold" for="">Phone*</label>
+                  <input required type="number" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="user-info">
+                  <label class="fw-bold" for="">Sex*</label>
+                  <input required type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="user-info">
+                  <label class="fw-bold" for="">Specific Location*</label>
+                  <input required type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- service details -->
+          <div class="service-box">
+            <div class="container">
+              <div class="row">
+                <div class="service-info">
+                  <p>Which gender(s) do you offer services to?* :</p>
+
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">Male</label>
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">Women</label>
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">Couples</label>
+                  <br />
+                  <p class="mt-2">Incall :</p>
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">Yes</label>
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">No</label>
+                  <br />
+                  <p class="mt-2">Outcall :</p>
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">Yes</label>
+                  <input required type="radio" id="" name="" value="" />
+                  <label for="">No</label>
+                  <br />
+                  <label class="mt-2" for="">sexual orientation*</label>
+                  <input required class="custom mt-2" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- img upload -->
+          <div class="row">
+            <h5 class="text-dark">Upload your image :</h5>
+            <div class="col-lg-4">
+              <div class="center">
+                <div class="form-input required">
+                  <input required
+                    type="file"
+                    id="file-ip-1"
+                    accept="image/*"
+                    onchange="showPreview(event);"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="center">
+                <div class="form-input required">
+                  <input required
+                    type="file"
+                    id="file-ip-1"
+                    accept="image/*"
+                    onchange="showPreview(event);"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="center">
+                <div class="form-input required">
+                  <input required
+                    type="file"
+                    id="file-ip-1"
+                    accept="image/*"
+                    onchange="showPreview(event);"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="center">
+                <div class="form-input required">
+                  <input required
+                    type="file"
+                    id="file-ip-1"
+                    accept="image/*"
+                    onchange="showPreview(event);"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="center">
+                <div class="form-input required">
+                  <input required
+                    type="file"
+                    id="file-ip-1"
+                    accept="image/*"
+                    onchange="showPreview(event);"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="center">
+                <div class="form-input required">
+                  <input required
+                    type="file"
+                    id="file-ip-1"
+                    accept="image/*"
+                    onchange="showPreview(event);"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pricing-table my-5">
+            <p class="text-dark my-2 mb-5">Please choice your Packages :</p>
+
+            
+          
+                <div class="col-lg-6">
+                  <div>
+                    <input required
+                      type="radio"
+                      id="control_01"
+                      name="select"
+                      value="1"
+                      checked
+                    />
+                    <label for="control_01">
+                      <h4 class="mt-2">Basic Add</h4>
+                      <p>
+                        Normal Paid Post
+                      </p>
+                      <p><strong>$1</strong>/10 day</p>
+                    </label>
+                  </div>
+                </div>
+         
+              <div class="col-lg-6">
+                <div>
+                  <input required type="radio" id="control_02" name="select" value="2" />
+                  <label for="control_02">
+                    <h4 class="mt-2">Premium Ad</h4>
+                    <p>
+                      Included into the top gallery
+                    </p>
+                    <p><strong>$3</strong>/14 day</p>
+                  </label>
+                </div>
+              </div>
+             
+        
+          </div>
+
+          <div class="row">
+            <input required class="btn btn-lg btn-success" type="submit" value="Submit">
+          </div>
+        </div>
+
+      </form>
+      </section>
+    </main>
+  </body>
+</html>

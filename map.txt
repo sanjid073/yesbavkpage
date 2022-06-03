@@ -6,15 +6,15 @@
 5 login/sign up page **
 6 user dashboard page ** 
 7 manage post **
-8 reload balance
-9 post add
+8 reload balance**
+9 post add**
 
 post
 
-10 Ad Location page
-11 post category  page
-12 post subcategory  page
-13 Make a Post page
+10 Ad Location page **
+11 postcategory  page **
+12 post subcategory  page **
+13 Make a Post page ** 
 
 admin 
 1 login 

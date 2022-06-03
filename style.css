@@ -68,6 +68,12 @@
     list-style: none;
     margin: 0;
 }
+.link-bar a{
+    color: black;
+}
+.link-bar a:hover{
+    color: blue;
+}
 
 /* footer */
 #footer{
